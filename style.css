@@ -3,9 +3,10 @@
 *{
   box-sizing: border-box;
 }
+
 header{
     background-color: gray;
-    height:100px;
+    height:200px;
  }
 
 body {
@@ -14,6 +15,7 @@ body {
   }
   
   nav {
+    padding-top: 10px;
     background-color: gray;
   }
 
@@ -21,10 +23,11 @@ body {
     width: 900px;
     margin:auto;
   }
+
   nav > ul {
-    padding-top:40px;
+    /* padding-top:10px; */
   }
-  
+
   nav > ul > li {
     display: inline;
   }
@@ -32,8 +35,31 @@ body {
   nav > ul > li > a {
     display: inline-block;
     color: white;
-    text-decoration: none;
-    padding: 20px;
+    padding: 12px;
+  }
+
+  #search{
+    margin:0;
+  }
+
+  .logo > img{
+    width: 120px;
+    padding-top:20px;
+  }
+  .home > img{
+    width: 50px;
+  }
+  .search-container  {
+    height:50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .search-container::after {
+    content: "";
+    clear: both;
+    display: table;
   }
   
   nav > ul > li > a:hover {
@@ -56,9 +82,9 @@ body {
   .dropdown-content > a {
     display: block;
     text-decoration: none;
-    padding: 4px;
+    padding: 10px;
     color: black;
-    width: 150%;
+    /* width: 150%; */
   }
   
   .dropdown:hover > .dropdown-content {
