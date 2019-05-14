@@ -1,9 +1,16 @@
 /* Styles go here */
 
+*{
+  box-sizing: border-box;
+}
+header{
+    background-color: gray;
+    height:100px;
+ }
+
 body {
     font-family: Arial;
     direction: rtl;
-    box-sizing: border-box;
   }
   
   nav {
@@ -15,7 +22,7 @@ body {
     margin:auto;
   }
   nav > ul {
-    padding: 0;
+    padding-top:40px;
   }
   
   nav > ul > li {
