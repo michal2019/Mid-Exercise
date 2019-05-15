@@ -14,8 +14,8 @@ body {
   font-family: 'Arial (Hebrew)', Arial;
   }
   
-  nav {
-    padding-top: 10px;
+  header >.container > nav {
+    padding-top: 30px;
   }
 
   .container {
@@ -36,9 +36,10 @@ body {
     border-right: 1px solid white;
     display: inline-block;
     color: white;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
     font-weight: bold;
+    text-decoration: none;
   }
 
   #english{
@@ -70,6 +71,7 @@ body {
   
   nav > ul > li > a:hover {
     color: rgb(42, 42, 179);
+    text-decoration: underline;
   }
    
   .dropdown {
@@ -101,21 +103,25 @@ body {
   footer {
     position: fixed;
     width: 100%;
-    height: 38px;
-    position: fixed;
+    height:35px;
     bottom: 0;
     background-image: linear-gradient(to right top, #989a9b, #8a8b8c, #7b7d7e, #6e6f70, #606162); 
+    z-index: 6;
   }
 
   footer > .container > nav > ul {
     position: relative;
-    padding-right: 100px;
+    padding-right: 60px;
   } 
 
   footer > .container > nav > ul > li > a {
     padding-top: 5px;
     font-size: 12px; 
   } 
+
+  footer >.container > nav {
+    padding-top: 5px;
+  }
 
   /* main */
   .row {
@@ -153,7 +159,6 @@ body {
     font-weight: 400;
     color: white;
     display: inline-block;
-
   }
 
    .content > p {
@@ -163,9 +168,34 @@ body {
   .content > h4 {
     margin: 8px;
   } 
-  /* .content > a > span {
-    display: inline-block;
+  .content > a {
     padding-left: 12px
-  } */
+  } 
 
-
+  .content2{
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    width: 220px;
+    height: 200px;
+    border-bottom-right-radius: 20px;
+    margin: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #575757;
+    display: inline-block;
+  }
+  .cube2 {
+    width: 292px;
+    height: 216px;
+    position: relative;
+    float: right;
+    padding: 3px;
+    z-index: 5;
+  }
+  .content2 > h4 {
+    margin: 8px;
+  } 
+  .content2 > a {
+    padding-left: 12px;
+  }
