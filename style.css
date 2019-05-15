@@ -6,8 +6,8 @@ header{
  }
 
 body {
-    font-family: Arial;
-    direction: rtl;
+  direction: rtl;
+  font-family: 'Arial (Hebrew)', Arial;
   }
   
   nav {
@@ -29,9 +29,13 @@ body {
   }
   
   nav > ul > li > a {
+    border-right: 1px solid white;
     display: inline-block;
     color: white;
     padding: 10px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
   }
 
   #english{
@@ -64,7 +68,7 @@ body {
   }
   
   nav > ul > li > a:hover {
-    background-color: black;
+    color: rgb(42, 42, 179);
   }
    
   .dropdown {
@@ -74,9 +78,10 @@ body {
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #DDD;
+    background-image: linear-gradient(to right top, #989a9b, #8a8b8c, #7b7d7e, #6e6f70, #606162);
     right: 0;
-    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
+    font-size: 15px;
+    font-weight: bold;
   }
   
   .dropdown-content > a {
@@ -84,6 +89,7 @@ body {
     text-decoration: none;
     padding: 10px;
     color: black;
+    color: white;
   }
   
   .dropdown:hover > .dropdown-content {
