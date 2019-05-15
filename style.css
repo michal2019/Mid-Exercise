@@ -1,11 +1,7 @@
 /* Styles go here */
-/* 
-*{
-  box-sizing: border-box;
-} */
 
 header{
-    background-color: gray;
+    background-image: linear-gradient(to right top, #989a9b, #8a8b8c, #7b7d7e, #6e6f70, #606162);
     height:120px;
  }
 
@@ -16,7 +12,6 @@ body {
   
   nav {
     padding-top: 10px;
-    background-color: gray;
   }
 
   .container {
@@ -25,7 +20,6 @@ body {
   }
 
   nav > ul {
-    /* padding-top:10px; */
     position: relative;
     padding-right: 150px;
   }
@@ -53,10 +47,6 @@ body {
     right: 0;
   }
 
-  .logo > img{
-    /* width: 150px;
-    padding-top:20px; */
-  }
   .home > img{
     width: 50px;
   }
@@ -86,7 +76,6 @@ body {
     position: absolute;
     background-color: #DDD;
     right: 0;
-    /* width: 150px; */
     box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.3);
   }
   
@@ -95,7 +84,6 @@ body {
     text-decoration: none;
     padding: 10px;
     color: black;
-    /* width: 150%; */
   }
   
   .dropdown:hover > .dropdown-content {
