@@ -52,10 +52,7 @@ body {
     top: -20px;
     right: 0;
   }
-
-  .home > img{
-    width: 50px;
-  }
+  
   .search-container  {
     height:50px;
     display: flex;
@@ -100,6 +97,11 @@ body {
   }
 
   /* footer style */
+  .fb-logo {
+    position: absolute;
+    top: 2px;
+    right: 10px;
+  }
   footer {
     position: fixed;
     top: 722px;
@@ -112,7 +114,7 @@ body {
 
   footer > .container > nav > ul {
     position: relative;
-    padding-right: 60px;
+    padding-right: 40px;
   } 
 
   footer > .container > nav > ul > li > a {
@@ -207,8 +209,32 @@ body {
     float: left;
     color: #575757;
   }
+  /* row2 left img */
+  .content2 .left{
+    padding-top: 20px;
+  }
 
-  .cube2 > .map{
+  .left::after{
+    content: " ";
+    clear:both;
+    display: table;
+  }
+  .left  img.map{
     float: left;
+  }
+
+  .left .areas{
+    display: inline-block;
+    float: right;
+    width: 100px;
+    height: 100px;
+  }
+
+  .areas > a{
+    padding: 1px;
+    font-size:12px; 
+    width: 10px;
+    height: 10px;   
+    color: #575757;
   }
   
