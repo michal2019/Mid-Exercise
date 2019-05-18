@@ -304,11 +304,11 @@ body {
 }
  .content-contact{
   position: absolute;
-  top: 5px;
+  top: 20px;
   left:45px;
   right: 10px; 
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 200px;
   border-bottom-right-radius: 20px;
   margin: 7px;
   font-size: 12px;
@@ -329,7 +329,7 @@ body {
 .content-contact > a , .content-contact-center>a{
   float: left;
   padding-left: 12px;
-  color: white;
+  color: grey;
 } 
 
 form {
