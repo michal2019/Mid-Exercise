@@ -3,7 +3,7 @@ function startProgress() {
     // set Interval receives two params: (1) function; (2) interval to call the function
     var slides = document.getElementsByClassName("showSlide");
     slides[0].style.display = "block";
-    setInterval(updateProgress, 3000);
+    setInterval(updateProgress, 5000);
 }
 
 function updateProgress() {
