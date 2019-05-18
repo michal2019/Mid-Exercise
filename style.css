@@ -209,6 +209,14 @@ body {
     float: left;
     color: #575757;
   }
+/* bonus */
+  #progress{
+    display: none;
+  }
+  .showSlide{
+    display: none;
+  }
+
   /* row2 left img */
   .content2 .left{
     padding-top: 20px;
@@ -219,24 +227,33 @@ body {
     clear:both;
     display: table;
   }
-  .left  img.map{
+  .left > img.map{
     float: left;
   }
 
-  .left .areas{
+  .left > .areas{
     display: inline-block;
     float: right;
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 150x;
+    padding: 15px;
   }
 
-  .areas > a{
-    padding: 1px;
+  .areas > ul> li> a{
+    display: inline-block;
+    padding: 3px;
     font-size:12px; 
-    width: 10px;
-    height: 10px;   
     color: #575757;
   }
+
+  .areas > ul {
+   list-style-type:none;
+  }
+  .cube2> .content-contact > h4{
+    margin: 4px;
+    color: rgb(61, 59, 59);
+    font-size: 14px
+  } 
   /* contact style */
   .right-cube {
     float: right;
@@ -304,7 +321,7 @@ body {
 }
  .content-contact{
   position: absolute;
-  top: 20px;
+  top: 10px;
   left:45px;
   right: 10px; 
   width: 250px;
@@ -322,7 +339,7 @@ body {
   margin: 8px;
   margin-top: 2px;
 } 
-.content-contact > h4  , .content-contact-center>h4{
+.left-cube> .content-contact > h4  , .left-cube>.content-contact-center>h4{
   margin: 4px;
   color: blue;
 } 

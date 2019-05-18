@@ -6,7 +6,7 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="startProgress()">
     <header>
         <div class="container">
             <div class="search-container">
@@ -131,8 +131,21 @@
                     <img src="images/small_cube_bg.png" alt="">
                     <div class="content-contact">
                         <h4>yellow click&pick;</h4>
-                        <img src="https://web.archive.org/web/20171018152543im_/http://www.paz.co.il/uploadImages/systemFiles/250X110571325734.jpg"
-                            alt="">
+                        <div class="slidercontainer">  
+                            <div class="showSlide">  
+                             <img src="https://web.archive.org/web/20171018152543im_/http://www.paz.co.il/uploadImages/systemFiles/250X110571325734.jpg"
+                                 alt=""> 
+                            </div> 
+                            <div class="showSlide">
+                                <img src="images/250X110668568400.jpg" /> 
+                            </div>  
+                            <div class="showSlide">  
+                                <img src="images/paz_250x110103131473.jpg"/> 
+                            </div>   
+                        </div>  
+                        <div>
+                            <progress type="hidden" id="progress" value="0" max="10000000000000000000000000000000000000000"></progress>
+                        </div>
                         <a href="#">לפרטים נוספים</a>
                     </div>
                 </div>
@@ -142,9 +155,14 @@
                         <h4>התחנות שלנו בדרך שלך</h4>
                         <div class="left">
                             <div class="areas">
-                                <a href="#">צפון</a>
+                                <ul>
+                                     <li><a href="#">צפון</a></li>
+                                     <li><a href="#">מרכז</a></li>
+                                     <li><a href="#">דרום</a></li>
+                                 </ul>
+                                <!-- <a href="#">צפון</a>
                                 <a href="#">מרכז</a>
-                                <a href="#">דרום</a>
+                                <a href="#">דרום</a> -->
                             </div>
                             <img class="map" src="images/Untitled-3058756287.jpg" alt="">
                         </div>

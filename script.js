@@ -1,20 +1,31 @@
-<script type="text/javascript">  
-        var slide_index = 1;  
-        displaySlides(slide_index);  
-        function nextSlide(n) {  
-            displaySlides(slide_index += n);  
-        }  
-        function currentSlide(n) {  
-            displaySlides(slide_index = n);  
-        }  
-        function displaySlides(n) {  
-            var i;  
-            var slides = document.getElementsByClassName("showSlide");  
-            if (n > slides.length) { slide_index = 1 }  
-            if (n < 1) { slide_index = slides.length }  
-            for (i = 0; i < slides.length; i++) {  
-                slides[i].style.display = "none";  
-            }  
-            slides[slide_index - 1].style.display = "block";  
-        }  
-</script>
+var slideIndex = 0;
+function startProgress() {
+    // set Interval receives two params: (1) function; (2) interval to call the function
+    var slides = document.getElementsByClassName("showSlide");
+    slides[0].style.display = "block";
+    setInterval(updateProgress, 3000);
+}
+
+function updateProgress() {
+    // Read current progress
+    var progressValue = document.getElementById("progress").value;
+  
+    // Incremeant progress by 1
+    progressValue++;
+
+    // Update progress
+    document.getElementById("progress").value = progressValue;
+    // number of images
+    var slides = document.getElementsByClassName("showSlide");
+    // increase by 1, Global variable
+    slideIndex++;
+    if (slideIndex >= slides.length)  
+    { 
+        slideIndex = 0; 
+    } 
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+  
+    slides[slideIndex].style.display = "block";
+}
